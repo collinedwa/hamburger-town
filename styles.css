@@ -130,7 +130,6 @@ a:hover {
 
 #bio:target panel{
     display: block;
-    opacity: 1;
 }
 
 #bio:target article{
@@ -178,7 +177,6 @@ a:hover {
 
 #experience:target panel{
     display: block;
-    opacity: 1;
 }
 
 #experience:target article{
@@ -226,7 +224,6 @@ a:hover {
 
 #portfolio:target panel{
     display: block;
-    opacity: 1;
 }
 
 #portfolio:target article{
