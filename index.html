@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="basic.js"></script>
     <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,9 +14,9 @@
     <nav>
         <ul>
             <li><a href="index.html" >HOME</a></li>
-            <li onclick="displayPanel('bio-panel')"><a href="#bio">ABOUT ME</a></li>
-            <li onclick="displayPanel('experience-panel')"><a href="#experience">EXPERIENCE</a></li>
-            <li onclick="displayPanel('portfolio-panel')"><a href="#portfolio">PORTFOLIO</a></li>
+            <li><a href="#bio">ABOUT ME</a></li>
+            <li><a href="#experience">EXPERIENCE</a></li>
+            <li><a href="#portfolio">PORTFOLIO</a></li>
         </ul>
     </nav>
 <body>
@@ -36,7 +35,7 @@
             </article>
         </panel>
     </div>
-    <div id="experience" class="section" hidden="until-found">
+    <div id="experience" class="section">
         <panel id="experience-panel">
             <h1>EXPERIENCE</h1>
             <h2>"For me, it's the McChicken."</h2>
@@ -51,7 +50,7 @@
             </article>
         </panel>
     </div>
-    <div id="portfolio" class="section" hidden="until-found">
+    <div id="portfolio" class="section">
         <panel id="portfolio-panel">
             <h1>PORTFOLIO</h1>
             <h2>"For me, it's the McChicken."</h2>
