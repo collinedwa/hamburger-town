@@ -114,6 +114,8 @@ a:hover {
     box-shadow: 3px 3px 4px #376917;
 }
 
+/* bio page */
+
 #bio{
     margin-top: 1%;
     margin-bottom: 1%;
@@ -123,6 +125,25 @@ a:hover {
 
 #bio panel{
     display: none;
+}
+
+#bio:target panel{
+    display: block;
+}
+
+#bio:target article{
+    animation-name: panel-load;
+    animation-duration: .7s;
+}
+
+#bio:target h1{
+    animation-name: fade-in;
+    animation-duration: .7s;
+}
+
+#bio:target h2{
+    animation-name: fade-in;
+    animation-duration: 2s;
 }
 
 #bio h1{
@@ -139,6 +160,8 @@ a:hover {
     color: #3d0b01;
 }
 
+/* experience page*/
+
 #experience{
     margin-top: 1%;
     margin-bottom: 1%;
@@ -148,6 +171,25 @@ a:hover {
 
 #experience panel{
     display: none;
+}
+
+#experience:target panel{
+    display: block;
+}
+
+#experience:target article{
+    animation-name: panel-load;
+    animation-duration: .7s;
+}
+
+#experience:target h1{
+    animation-name: fade-in;
+    animation-duration: .7s;
+}
+
+#experience:target h2{
+    animation-name: fade-in;
+    animation-duration: 2s;
 }
 
 #experience h1{
@@ -164,6 +206,8 @@ a:hover {
     color: #5d4501;
 }
 
+/* portfolio page*/
+
 #portfolio{
     margin-top: 1%;
     margin-bottom: 1%;
@@ -173,6 +217,25 @@ a:hover {
 
 #portfolio panel{
     display: none;
+}
+
+#portfolio:target panel{
+    display: block;
+}
+
+#portfolio:target article{
+    animation-name: panel-load;
+    animation-duration: .7s;
+}
+
+#portfolio:target h1{
+    animation-name: fade-in;
+    animation-duration: .7s;
+}
+
+#portfolio:target h2{
+    animation-name: fade-in;
+    animation-duration: 2s;
 }
 
 #portfolio article{
@@ -207,6 +270,24 @@ a:hover {
 footer{
     text-align: center;
 }
+
+/* animations */
+
+@keyframes panel-load{
+    0% {scale: 0;
+        opacity: 0;}
+    100% {scale: 1;
+          opacity: 1;}
+}
+
+@keyframes fade-in{
+    0% {opacity: 0;
+        scale: 1.3;}
+    100% {opacity: 1;
+          scale: 1;}
+}
+
+/* media queries */
 
 @media screen and (max-width:1300px){
     body{
