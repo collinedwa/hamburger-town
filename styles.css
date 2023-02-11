@@ -49,7 +49,7 @@ div h1{
 }
 
 div h2{
-    font-family: Snell Roundhand, cursive;
+    font-family: Snell Roundhand, Brush Script MT, cursive;
     color: white;
     text-align: center;
     margin: auto;
@@ -124,11 +124,13 @@ a:hover {
 }
 
 #bio panel{
+    opacity: 0;
     display: none;
 }
 
 #bio:target panel{
     display: block;
+    opacity: 1;
 }
 
 #bio:target article{
@@ -137,7 +139,7 @@ a:hover {
 }
 
 #bio:target h1{
-    animation-name: fade-in;
+    animation-name: quick-fade;
     animation-duration: .7s;
 }
 
@@ -170,11 +172,13 @@ a:hover {
 }
 
 #experience panel{
+    opacity: 0;
     display: none;
 }
 
 #experience:target panel{
     display: block;
+    opacity: 1;
 }
 
 #experience:target article{
@@ -183,7 +187,7 @@ a:hover {
 }
 
 #experience:target h1{
-    animation-name: fade-in;
+    animation-name: quick-fade;
     animation-duration: .7s;
 }
 
@@ -216,11 +220,13 @@ a:hover {
 }
 
 #portfolio panel{
+    opacity: 0;
     display: none;
 }
 
 #portfolio:target panel{
     display: block;
+    opacity: 1;
 }
 
 #portfolio:target article{
@@ -229,7 +235,7 @@ a:hover {
 }
 
 #portfolio:target h1{
-    animation-name: fade-in;
+    animation-name: quick-fade;
     animation-duration: .7s;
 }
 
@@ -285,6 +291,11 @@ footer{
         scale: 1.3;}
     100% {opacity: 1;
           scale: 1;}
+}
+
+@keyframes quick-fade{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
 }
 
 /* media queries */
