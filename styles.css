@@ -24,6 +24,7 @@ header{
     text-align: center;
     width: 100%;
     margin-top: 2%;
+    box-shadow: inset 0 0 10px #7d4919;
     transition: all 0.5s ease;
 }
 
@@ -37,8 +38,13 @@ ul {
     display: flex;
     justify-content: center;
     list-style-type: none;
+    box-shadow: inset 0 0 10px #376917;
 }
 
+div:target{
+    animation-name: enlarge;
+    animation-duration: .7s;
+}
 
 div h1{
     text-align: center;
@@ -93,7 +99,6 @@ article img{
     transition: all 0.5s ease;
 }
 
-
 li{
     padding: 1%;
     margin: auto;
@@ -105,13 +110,14 @@ a {
     border-radius: 6px;
     text-decoration-line: none;
     color: #376917;
+    box-shadow: inset 0 0 5px #376917;
     transition: all 0.5s ease;
 }
 
 
 a:hover {
     font-size: 1.7rem;
-    box-shadow: 3px 3px 4px #376917;
+    box-shadow: inset 0 0 5px #376917, 0px 3px 5px #376917;
 }
 
 /* bio page */
@@ -121,46 +127,56 @@ a:hover {
     margin-bottom: 1%;
     border-radius: 12rem;
     background-color: #A93016;
+    box-shadow: inset 0 0 10px #5C1000;
 }
 
 #bio panel{
     opacity: 0;
-    height: 0px;
-    width: 0px;
     display: none;
 }
 
 #bio:target panel{
     display: block;
-    opacity: 1;
-    animation-name: enlarge;
+    animation-name: quick-fade;
     animation-fill-mode: forwards;
     animation-duration: 0.7s;
 }
 
 #bio:target article{
+    animation-delay: 0.3s;
     animation-name: panel-load;
+    animation-fill-mode: forwards;
     animation-duration: .7s;
 }
 
 #bio:target h1{
+    animation-delay: 0.3s;
     animation-name: quick-fade;
+    animation-fill-mode: forwards;
     animation-duration: .7s;
 }
 
 #bio:target h2{
+    animation-delay: 0.3s;
     animation-name: fade-in;
+    animation-fill-mode: forwards;
     animation-duration: 2s;
 }
 
 #bio h1{
+    opacity: 0;
     color: #4e0d00;
 }
 
+#bio h2{
+    opacity: 0;
+}
+
 #bio article{
-    background-color: #E5725A;
+    opacity: 0;
+    background-image: linear-gradient(to right, #E5725A, #F58A73);
     border-radius: 8px;
-    box-shadow: 3px 3px 4px #5C1000;
+    box-shadow: 0px 3px 5px #3d0b01;
 }
 
 #bio article p{
@@ -174,46 +190,56 @@ a:hover {
     margin-bottom: 1%;
     background-color: #D9AB2B;
     border-radius: 2px;
+    box-shadow: inset 0 0 10px #8A6500;
 }
 
 #experience panel{
     opacity: 0;
-    height: 0px;
-    width: 0px;
     display: none;
 }
 
 #experience:target panel{
     display: block;
-    opacity: 1;
-    animation-name: enlarge;
+    animation-name: quick-fade;
     animation-fill-mode: forwards;
-    animation-duration: 0.7s;
+    animation-duration: .7s;
 }
 
 #experience:target article{
+    animation-delay: 0.3s;
     animation-name: panel-load;
+    animation-fill-mode: forwards;
     animation-duration: .7s;
 }
 
 #experience:target h1{
+    animation-delay: 0.3s;
     animation-name: quick-fade;
+    animation-fill-mode: forwards;
     animation-duration: .7s;
 }
 
 #experience:target h2{
+    animation-delay: 0.3s;
     animation-name: fade-in;
+    animation-fill-mode: forwards;
     animation-duration: 2s;
 }
 
 #experience h1{
+    opacity: 0;
     color: #715301;
 }
 
+#experience h2{
+    opacity: 0;
+}
+
 #experience article{
-    background-color: #FFDE81;
+    opacity: 0;
+    background-image: linear-gradient(to left, #FFDE81, #F5D273);
     border-radius: 8px;
-    box-shadow: 3px 3px 4px #8A6500;
+    box-shadow: 0px 3px 5px #5d4501;
 }
 
 #experience article p{
@@ -227,46 +253,57 @@ a:hover {
     margin-bottom: 1%;
     border-radius: 1.2rem;
     background-color: #3D2B23;
+    box-shadow: inset  0 0 10px #271209;
 }
 
 #portfolio panel{
     opacity: 0;
-    height: 0px;
-    width: 0px;
     display: none;
 }
 
 #portfolio:target panel{
     display: block;
-    opacity: 1;
-    animation-name: enlarge;
+    animation-name: quick-fade;
     animation-fill-mode: forwards;
     animation-duration: 0.7s;
 }
 
 #portfolio:target article{
+    animation-delay: 0.3s;
     animation-name: panel-load;
+    animation-fill-mode: forwards;
     animation-duration: .7s;
 }
 
 #portfolio:target h1{
+    animation-delay: 0.3s;
     animation-name: quick-fade;
+    animation-fill-mode: forwards;
     animation-duration: .7s;
 }
 
 #portfolio:target h2{
+    animation-delay: 0.3s;
     animation-name: fade-in;
+    animation-fill-mode: forwards;
     animation-duration: 2s;
 }
 
 #portfolio article{
+    opacity: 0;
     background-color: #947B6F;
+    background-image: linear-gradient(to left, #947B6F, #8B6D5F);
     border-radius: 8px;
-    box-shadow: 3px 3px 4px #271209;
+    box-shadow: 0px 3px 5px #1f0e07;
 }
 
 #portfolio h1{
+    opacity: 0;
     color: #947B6F;
+}
+
+#portfolio h2{
+    opacity: 0;
 }
 
 #portfolio article p{
@@ -278,6 +315,7 @@ a:hover {
     margin-bottom: 2%;
     background-color: #E0A874;
     border-radius: .8rem;
+    box-shadow: inset 0 0 10px #7d4919;
 }
 
 .section{
@@ -314,14 +352,9 @@ footer{
 }
 
 @keyframes enlarge{
-    0%{opacity: 0;
-       scale: 0;
-       height: 0px;
-       width: 0px;}
-    100%{opacity: 100;
-         scale: 1;
-         height: 100%;
-         width: 100%;}
+    0%{ transform-origin: top;
+        transform: scaleY(0);}
+    100%{transform: scaleY(1);}
 }
 
 /* media queries */
