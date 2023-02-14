@@ -55,7 +55,7 @@ div h2{
     margin: auto;
     margin-top: 0%;
     padding-bottom: 5%;
-    font-size: 2rem;
+    font-size: 2.4rem;
     transition: all 0.5s ease;
 }
 
@@ -125,12 +125,17 @@ a:hover {
 
 #bio panel{
     opacity: 0;
+    height: 0px;
+    width: 0px;
     display: none;
 }
 
 #bio:target panel{
     display: block;
     opacity: 1;
+    animation-name: enlarge;
+    animation-fill-mode: forwards;
+    animation-duration: 0.7s;
 }
 
 #bio:target article{
@@ -173,12 +178,17 @@ a:hover {
 
 #experience panel{
     opacity: 0;
+    height: 0px;
+    width: 0px;
     display: none;
 }
 
 #experience:target panel{
     display: block;
     opacity: 1;
+    animation-name: enlarge;
+    animation-fill-mode: forwards;
+    animation-duration: 0.7s;
 }
 
 #experience:target article{
@@ -221,12 +231,17 @@ a:hover {
 
 #portfolio panel{
     opacity: 0;
+    height: 0px;
+    width: 0px;
     display: none;
 }
 
 #portfolio:target panel{
     display: block;
     opacity: 1;
+    animation-name: enlarge;
+    animation-fill-mode: forwards;
+    animation-duration: 0.7s;
 }
 
 #portfolio:target article{
@@ -298,6 +313,17 @@ footer{
     100%{opacity: 1;}
 }
 
+@keyframes enlarge{
+    0%{opacity: 0;
+       scale: 0;
+       height: 0px;
+       width: 0px;}
+    100%{opacity: 100;
+         scale: 1;
+         height: 100%;
+         width: 100%;}
+}
+
 /* media queries */
 
 @media screen and (max-width:1300px){
@@ -348,7 +374,7 @@ footer{
     }
     
     div h2{
-        font-size: 1.7rem;
+        font-size: 1.8rem;
     }
 
     a {
@@ -398,7 +424,7 @@ footer{
     }
 
     div h2{
-        font-size: 1.2rem;
+        font-size: 1.4rem;
     }
 
     a {
@@ -425,7 +451,7 @@ footer{
     }
 
     div h2{
-        font-size: 1rem;
+        font-size: 1.3rem;
     }
 
     a {
