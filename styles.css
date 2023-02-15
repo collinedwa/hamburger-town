@@ -468,6 +468,10 @@ footer{
 }
 
 @media screen and (max-width:500px){
+    * {
+        -webkit-backface-visibility: hidden;
+    }
+
     article p{
         font-size: 0.7rem;
     }
@@ -484,7 +488,7 @@ footer{
     }
 
     div h2{
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
 
     a {
@@ -494,6 +498,19 @@ footer{
     }
     a:hover {
         font-size: 0.8rem;
+    }
+
+}
+
+@media screen and (max-width: 380px){
+
+    a {
+        padding: 0.35rem;
+        border-radius: 4px;
+        font-size: 0.55rem;
+    }
+    a:hover {
+        font-size: 0.7rem;
     }
 
 }
