@@ -2,14 +2,42 @@
 ## Table of Contents
 
 1. [Introduction](#introduction)
-2. [Getting started](#gettingstarted)
-3. [Conclusions](#conclusions)
+2. [Project requirements](#requirements)
+3. [Getting started](#gettingstarted)
+4. [Conclusions](#conclusions)
 
 <div id='introduction'/>
 
 ## Introduction:
 
 This project is a simple, static web page intended to demonstrate some basic competency with HTML and CSS. It was originally supposed to a personal portfolio but I decided to make it a little goofy, as you'll soon find out!
+
+<div id='requirements'>
+
+## Project requirements:
+### HTML:
+* Attributes: name and value
+* Document structure, Proper Nesting HTML
+* Headings (h1/h2/h3…)
+* Paragraphs
+* Images
+* Lists
+* Links
+* Semantic Elements (i.e. article/aside instead of only div)
+* Structure elements (i.e. header/nav/main/footer)
+* Fallback Elements (div/span)
+
+### CSS:
+* CSS in external stylesheet and linked to html via link tag
+* Margin vs. Padding
+* Borders and Shadows
+* Fonts
+* Backgrounds: Colors/Images
+* Sizes: em, rem, px, %
+* Flexbox
+* Media Queries (for mobile friendly design)
+* Cascading and Specificity: Element Names Ids Classes
+* No “!important” Property
 
 <div id='gettingstarted'/>
 
